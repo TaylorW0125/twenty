@@ -7,10 +7,11 @@ userNum.addEventListener("keydown", function(e) {
 })
 
 function run() {
-    document.getElementById("paragraph").innerHTML = "Hello World!";
+    document.getElementById("paragraph").innerHTML = "Hello! Welcome to the  Number Guesser!";
     document.getElementById("paragraph").style.backgroundColor = "lightgreen";
     document.getElementById("paragraph").style.color = "green"
     document.getElementById("paragraph").style.padding = "20px"
+    document.getElementById("paragraph").style.textAlign = "center"
     randomNum();
     userNumber();
     compareNumbers();
