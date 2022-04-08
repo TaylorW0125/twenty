@@ -4,7 +4,9 @@ userNum.addEventListener("keydown", function(e) {
         run(e);
     }
 
-})
+});
+
+userNum.focus();
 
 function run() {
     document.getElementById("paragraph").innerHTML = "Hello! Welcome to the  Number Guesser!";
@@ -58,4 +60,9 @@ function compareNumbers() {
         z.style.padding = "20px"
         z.style.textAlign = "center"
     }
+    resetInput();
+}
+
+function resetInput() {
+    document.getElementById("getNumber").value = "";
 }
