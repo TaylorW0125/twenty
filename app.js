@@ -8,6 +8,8 @@ userNum.addEventListener("keydown", function(e) {
 
 userNum.focus();
 
+let counter = 0
+
 function run() {
     document.getElementById("paragraph").innerHTML = "Hello! Welcome to the  Number Guesser!";
     document.getElementById("paragraph").style.backgroundColor = "lightgreen";
@@ -53,6 +55,7 @@ function compareNumbers() {
         z.style.backgroundColor = "darkgreen"
         z.style.padding = "20px"
         z.style.textAlign = "center"
+        counter++
     } else if ( a == b) {
         z.innerHTML = "Numbers are the same. The computer got " + b + ", user got " + a;
         z.style.color = "darkgreen"
